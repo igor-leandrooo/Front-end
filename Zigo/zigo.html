@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu sitezinho</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        main {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindos ao meu site!!</h1>
+    </header>
+
+    <main>
+        <h2>Igor</h2>
+        <p>Este é um exemplo simples de uma página HTML feita no Visual Studio Code.</p>
+
+        <button onclick="mostrarMensagem()">Clique aqui</button>
+
+        <p id="mensagem" style="margin-top: 20px; color: blue;"></p>
+    </main>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").textContent = "Olá! Você clicou no botão.";
+        }
+    </script>
+
+</body>
+</html>
