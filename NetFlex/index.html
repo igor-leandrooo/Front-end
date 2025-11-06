@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Netflix - Heróis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">
+      <img src="imagens/logo.png" alt="Logo Mini Netflix">
+      <h1>Mini Netflix</h1>
+    </div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Heróis</a>
+      <a href="#">Vilões</a>
+      <a href="#">Minha Lista</a>
+    </nav>
+  </header>
+
+  <!-- Banner atualizado com Vingadores: Doomsday -->
+  <section class="banner">
+    <div class="conteudo-banner">
+      <h2>Vingadores: Doomsday</h2>
+      <p>Quando um poder ancestral ameaça destruir o universo, os Vingadores precisam unir forças como nunca antes. 
+      Heróis e vilões se unem para enfrentar o juízo final numa batalha épica que decidirá o destino de todos os mundos.</p>
+      <a href="#detalhes-heroi1" class="btn-assistir">▶ Assistir Agora</a>
+    </div>
+  </section>
+
+  <main>
+  
+    <section class="categoria">
+      <h2>Heróis em Ação</h2>
+      <div class="carrossel">
+        <article class="filme"><a href="#detalhes-heroi1"><img src="imagens/heroi1.jpg" alt="Vingadores Doomsday"></a></article>
+        <article class="filme"><a href="#detalhes-heroi2"><img src="imagens/heroi2.jpg" alt="Liga da Justiça"></a></article>
+        <article class="filme"><a href="#detalhes-heroi3"><img src="imagens/heroi3.jpg" alt="Vingadores Ultimato"></a></article>
+      </div>
+    </section>
+
+   
+    <section class="categoria">
+      <h2>Os Vilões</h2>
+      <div class="carrossel">
+        <article class="filme"><a href="#detalhes-vilao1"><img src="imagens/vilao1.jpg" alt="Coringa"></a></article>
+        <article class="filme"><a href="#detalhes-vilao2"><img src="imagens/vilao2.jpg" alt="Venom"></a></article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modais -->
+  <!-- Heróis -->
+  <div id="detalhes-heroi1" class="modal">
+    <div class="conteudo-modal">
+      <a href="#" class="fechar">×</a>
+      <img src="imagens/heroi1.jpg" alt="Vingadores Doomsday">
+      <h3>Vingadores: Doomsday</h3>
+      <p>Quando um poder ancestral ameaça destruir o universo, os Vingadores precisam unir forças como nunca antes. 
+      Heróis e vilões se unem para enfrentar o juízo final numa batalha épica que decidirá o destino de todos os mundos.</p>
+    </div>
+  </div>
+
+  <div id="detalhes-heroi2" class="modal">
+    <div class="conteudo-modal">
+      <a href="#" class="fechar">×</a>
+      <img src="imagens/heroi2.jpg" alt="Liga da Justiça">
+      <h3>Liga da Justiça</h3>
+      <p>Os maiores heróis da Terra se unem para combater ameaças cósmicas e proteger a humanidade. 
+      Uma equipe de coragem, inteligência e força imparável.</p>
+    </div>
+  </div>
+
+  <div id="detalhes-heroi3" class="modal">
+    <div class="conteudo-modal">
+      <a href="#" class="fechar">×</a>
+      <img src="imagens/heroi3.jpg" alt="Vingadores Ultimato">
+      <h3>Vingadores: Ultimato</h3>
+      <p>Após a devastação causada por Thanos, os Vingadores restantes precisam unir forças e traçar um plano impossível 
+      para restaurar o universo e derrotar o Titã Louco de uma vez por todas.</p>
+    </div>
+  </div>
+
+  <!-- Vilões -->
+  <div id="detalhes-vilao1" class="modal">
+    <div class="conteudo-modal">
+      <a href="#" class="fechar">×</a>
+      <img src="imagens/vilao1.jpg" alt="Coringa">
+      <h3>Coringa</h3>
+      <p>O vilão caótico de Gotham que espalha terror com sua mente brilhante e imprevisível. Sempre um passo à frente, sem limites morais.</p>
+    </div>
+  </div>
+
+  <div id="detalhes-vilao2" class="modal">
+    <div class="conteudo-modal">
+      <a href="#" class="fechar">×</a>
+      <img src="imagens/vilao2.jpg" alt="Venom">
+      <h3>Venom</h3>
+      <p>Um simbionte alienígena que se une a seu hospedeiro para causar destruição, criando uma ameaça quase invencível e imprevisível.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Mini Netflix © 2025 | Feito com 💻 por Estudantes de Informática</p>
+  </footer>
+</body>
+</html>

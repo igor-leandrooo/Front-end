@@ -1,0 +1,209 @@
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0b0b0b;
+    color: #fff;
+    overflow-x: hidden;
+    }
+    .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.9);
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    }
+
+    .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+
+    .logo img {
+    width: 40px;
+    }
+
+    .logo h1 {
+    color: #e50914;
+    font-size: 1.5em;
+    font-weight: bold;
+    }
+
+    nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    }
+
+    nav a:hover {
+    color: #e50914;
+    }
+    .banner {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent),
+                url('imagens/capa.jpg') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 100px 50px;
+    }
+
+    .conteudo-banner {
+    max-width: 500px;
+    animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .conteudo-banner h2 {
+    font-size: 2.5em;
+    color: #e50914;
+    margin-bottom: 10px;
+    }
+
+    .conteudo-banner p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #ddd;
+    }
+
+    .btn-assistir {
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn-assistir:hover {
+    background-color: #f6121d;
+    transform: scale(1.05);
+    }
+    .categoria {
+    margin-top: 40px;
+    padding: 20px 40px;
+    }
+
+    .categoria h2 {
+    color: #e50914;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    }
+
+    .carrossel {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 15px;
+    scroll-behavior: smooth;
+    }
+
+    .filme img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    }
+
+    .filme img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(229,9,20,0.7);
+    }
+    .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    }
+
+    .modal:target {
+    display: flex;
+    animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .conteudo-modal {
+    background: #181818;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    position: relative;
+    box-shadow: 0 0 25px rgba(229,9,20,0.6);
+    }
+
+    .conteudo-modal img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    }
+
+    .conteudo-modal h3 {
+    color: #e50914;
+    margin-bottom: 10px;
+    }
+
+    .conteudo-modal p {
+    color: #ccc;
+    }
+
+    .fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: #e50914;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.3em;
+    text-decoration: none;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #111;
+    margin-top: 40px;
+    color: #888;
+    font-size: 0.9em;
+    }
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+    .banner {
+        height: 70vh;
+        padding: 80px 20px;
+    }
+
+    .filme img {
+        width: 140px;
+    }
+
+    .conteudo-modal {
+        width: 280px;
+    }
+    }
