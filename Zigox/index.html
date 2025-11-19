@@ -1,0 +1,83 @@
+<head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+</head>
+
+<h2>Calculadora</h2>
+
+<p>Informe o número 1:</p>
+<input id="num1" type="number">
+
+<p>Informe o número 2:</p>
+<input id="num2" type="number">
+
+<br><br>
+
+<button type="button" onclick="calcular('somar')">Somar</button>
+<button type="button" onclick="calcular('subtrair')">Subtrair</button>
+<button type="button" onclick="calcular('multiplicar')">Multiplicar</button>
+<button type="button" onclick="calcular('dividir')">Dividir</button>
+<button type="button" onclick="calcular('potencia')">Potência</button>
+<br><br><br>
+<br>
+<button type="button" onclick="1('1')">1</button>
+<button type="button" onclick="2('2')">2</button>
+<button type="button" onclick="3('3')">3</button>
+<br>
+<button type="button" onclick="4('4')">4</button>
+<button type="button" onclick="5('5')">5</button>
+<button type="button" onclick="6('6')">6</button>
+<br>
+<button type="button" onclick="7('7')">7</button>
+<button type="button" onclick="8('8')">8</button>
+<button type="button" onclick="9('9')">9</button>
+<br>
+
+<button type="button" onclick="0('0')">0</button>
+
+<h4>Resultado:</h4>
+<div id="resultado"></div>
+
+<script>
+    function calcular(operacao) {
+
+        var numero1 = parseFloat(document.getElementById('num1').value);
+        var numero2 = parseFloat(document.getElementById('num2').value);
+        var resultado = "";
+
+        switch (operacao) {
+
+            case 'somar':
+                resultado = numero1 + numero2;
+                break;
+
+            case 'subtrair':
+                resultado = numero1 - numero2;
+                break;
+
+            case 'multiplicar':
+                resultado = numero1 * numero2;
+                break;
+
+            case 'dividir':
+                if (numero2 == 0) {
+                    resultado = "Não é possível dividir por zero!";
+                } else {
+                    let quociente = Math.floor(numero1 / numero2);
+                    let sobra = numero1 % numero2;
+                    resultado = `Quociente: ${quociente} <br> Sobra: ${sobra}`;
+                }
+                break;
+
+            case 'potencia':
+                resultado = numero1 ** numero2;
+                break;
+                case 'num1':
+                    num1 = num1 == 1
+                
+
+        }
+
+        document.getElementById('num1').innerText = resultado;
+    }
+</script>
